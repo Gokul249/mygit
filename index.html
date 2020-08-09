@@ -1,8 +1,15 @@
-<html>
+<html ng-app ='LunchCheck'>
 <head>
-<title>My page</title>
+<script src ="angular.min.js"></script>
+<script src ="lunch-app.js"></script>
+<title>Assignment-1</title>
 </head>
 <body>
-<h1 color="Cyan">Welcome to my webpage</h1>
+<div ng-controller='LunchCheckController'>
+<div style="color : brown ; font : Sans-serif"><center><b><h2>Give the items ate during lunch seperated by commas.</h2></b></center></div>
+<div><input type="text" ng-model="name">
+    <button ng-click="checklunch()">Submit</button></div>
+<h3 style= "color : violet">{{mess}}</h3>
+</div>
 </body>
 </html>
